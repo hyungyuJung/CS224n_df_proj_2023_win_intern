@@ -321,7 +321,7 @@ def cached_path(
   return output_path
 
 
-def get_parameter_dtype(parameter: Union[nn.Module]):
+def get_parameter_dtype(parameter: Union[nn.Module]): # gyu. originally 
   try:
     return next(parameter.parameters()).dtype
   except StopIteration:
